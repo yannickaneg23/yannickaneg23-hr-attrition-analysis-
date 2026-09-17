@@ -6,67 +6,68 @@
 # ============================================================
 
 project:
-  name: "[Project Title]"
-  slug: "[project-title-lowercase-hyphenated]"   # Used for folder names, URLs
+  name: "HR Employee Attrition Analysis"
+  slug: "hr-attrition-analysis"
   version: "1.0.0"
-  status: "completed"                             # Options: in-progress | completed | archived
-  last_updated: "YYYY-MM-DD"
+  status: "completed"
+  last_updated: "2026-09-17"
 
 author:
-  name: "[Your Full Name]"
-  role: "[Your Role or Title]"
+  name: "Aneg Yannick"
+  role: "Data Analyst"
   github: "[github_username]"
   linkedin: "[linkedin_profile_url]"
   email: "[optional]"
 
 project_type:
-  primary: "[e.g., exploratory-analysis]"        # See taxonomy below
+  primary: "sql-analysis"
   secondary:
-    - "[e.g., dashboard]"
-    - "[e.g., data-pipeline]"
+    - "exploratory-analysis"
+    - "dashboard"
+    - "data-cleaning"
+    - "end-to-end"
 
-# PROJECT TYPE TAXONOMY (pick what applies):
-# exploratory-analysis | sql-analysis | dashboard | data-pipeline
-# predictive-model | data-cleaning | reporting | visualization
-# end-to-end | automation | other
-
-domain: "[e.g., finance / healthcare / marketing / operations / education / other]"
+domain: "human resources"
 
 tools:
   languages:
-    - "[e.g., Python 3.11]"
-    - "[e.g., SQL]"
-  libraries:
-    - "[e.g., pandas 2.0]"
-    - "[e.g., matplotlib 3.7]"
+    - "SQL"
+  libraries: []
   platforms:
-    - "[e.g., GitHub]"
-    - "[e.g., Google Colab]"
+    - "GitHub"
+    - "MySQL Workbench"
   visualization:
-    - "[e.g., Power BI]"
-    - "[e.g., Tableau]"
-    - "[e.g., Plotly]"
+    - "Power BI"
+    - "Excel"
 
 data:
   sources:
-    - name: "[Source name]"
-      type: "[csv / api / database / web-scrape / manual / public-dataset]"
-      access: "[public / private / simulated / anonymized]"
-  row_count_approx: "[e.g., 50000]"
+    - name: "IBM HR Analytics Employee Attrition & Performance"
+      type: "csv"
+      access: "public-dataset"
+  row_count_approx: "1470"
   date_range:
-    start: "YYYY-MM-DD"
-    end: "YYYY-MM-DD"
+    start: "N/A"
+    end: "N/A"
 
 outputs:
-  - type: "[notebook / dashboard / report / csv / script / slides]"
-    path: "[relative/path/to/output]"
-    description: "[One-line description]"
+  - type: "dashboard"
+    path: "dashboard/"
+    description: "2-page Power BI dashboard covering attrition overview and risk drivers"
+  - type: "script"
+    path: "sql/final/"
+    description: "SQL queries answering the five core business questions"
+  - type: "report"
+    path: "README.md"
+    description: "Full project writeup with insights and recommendations"
 
 dependencies:
-  file: "[requirements.txt / environment.yml / packages.R / none]"
-  notes: "[Any setup instructions or environment caveats]"
+  file: "none"
+  notes: "Requires Excel, MySQL Workbench, and Power BI Desktop to reproduce; no code dependencies."
 
 tags:
-  - "[keyword-1]"
-  - "[keyword-2]"
-  - "[keyword-3]"
+  - "hr-analytics"
+  - "attrition"
+  - "sql"
+  - "power-bi"
+  - "excel"
